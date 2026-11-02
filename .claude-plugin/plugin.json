@@ -1,0 +1,9 @@
+{
+  "name": "job-application-agent",
+  "version": "1.0.0",
+  "description": "Job application agent and skills: company research, job ad analysis, tailored resume, cover letter and email, selection criteria responses, portfolio shortlist, linting and .docx export. Based on the UNSW Careers resume, cover letter and selection criteria guides.",
+  "author": {
+    "name": "Carrie"
+  },
+  "keywords": ["resume", "cv", "cover-letter", "selection-criteria", "career", "job-application"]
+}
