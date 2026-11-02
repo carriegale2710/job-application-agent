@@ -14,6 +14,7 @@ Adapted from `resume-quantifier` in [ResumeSkills](https://github.com/Paramchoud
 | Volume | Users, customers, tickets, records, pages, components, team size |
 | Quality | Satisfaction score, accuracy, grade, uptime, accessibility audit result |
 | Frequency | Per day, per week, per release, per semester |
+| Performance | Latency or load time before → after, requests or jobs handled, build or deploy time, bundle size, cloud cost |
 
 ## Questions to ask
 
@@ -46,6 +47,7 @@ Record every estimate in `resume/master-resume.md` as an estimate, with how it w
 ## Do not
 
 - Guess or derive a number from figures the user did not give.
+- Write a projected or expected result as achieved. Write "designed to…" or leave it out.
 - Claim a team result as the user's own ("reduced churn 20%" when the team did).
 - Use a number the user could not explain in an interview.
 - Put more than two numbers in one bullet.

@@ -41,6 +41,8 @@ The script cannot check these. Report each as pass or fail.
 - [ ] Profile uses summary statements; experience uses achievement statements
 - [ ] Past tense for past roles; current roles consistent within the role
 - [ ] No referees section
+- [ ] Single column; no tables, text boxes, images or icons; contact details as plain text
+- [ ] Sent in the format the ad asks for (.docx or PDF); PDF text is selectable
 
 ### Cover letter
 

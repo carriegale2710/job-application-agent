@@ -9,6 +9,8 @@ Adapted from `portfolio-case-study-writer` in [ResumeSkills](https://github.com/
 ```markdown
 # <Project name>
 
+<One-line pitch: "A <stack or type> app that lets <users> <core capability>, with <differentiator>.">
+
 ## Quick facts
 - **Role:** <your role, e.g. "Front-end developer (1 of 3)">
 - **Organisation:** <client, employer, course or personal>
@@ -16,6 +18,7 @@ Adapted from `portfolio-case-study-writer` in [ResumeSkills](https://github.com/
 - **Team:** <who else, by role>
 - **Tools:** <stack or methods>
 - **Result:** <one line, with a number if there is one>
+- **Links:** <live demo or video> | <repo>
 
 ## Problem
 <The context, who had the problem, and why it mattered. 2-4 sentences.>
@@ -26,10 +29,13 @@ Adapted from `portfolio-case-study-writer` in [ResumeSkills](https://github.com/
 ### Approach
 <How you tackled it>
 ### Key decisions
-<2-3 choices you made, the options you considered, and why you chose this one>
+<2-3 choices, each as "Chose X over Y to <gain>; accepted <trade-off>.">
 
 ## Solution
 <What you delivered. Describe each key screen, feature or component, and point to its image.>
+
+## Challenges
+- <2-3 bullets: problem → what you tried → what worked → result>
 
 ## Results
 | Measure | Before | After |
@@ -41,6 +47,10 @@ Adapted from `portfolio-case-study-writer` in [ResumeSkills](https://github.com/
 ## Images needed
 - <before and after screens, diagrams, code snippets, results charts>
 ```
+
+## Uni projects
+
+Lead with the problem and the users, not the course code. Say "requirements" and "stakeholders", not "assignment" or "marks". A recorded grade or distinction can stand in as the result.
 
 ## Emphasis by role
 
@@ -55,7 +65,7 @@ Adapted from `portfolio-case-study-writer` in [ResumeSkills](https://github.com/
 
 - [ ] Your part is clear, separate from the team's
 - [ ] Every fact and number is in `resume/master-resume.md`
-- [ ] Results are quantified, or the case study says why they could not be
+- [ ] Results are quantified, or the case study says why they could not be. With no outcome metric, give scope instead: entities, routes, screens, tests, test coverage
 - [ ] Key decisions show reasons, not just the steps
 - [ ] Confidential data is blurred, and the user has permission to show client work
 - [ ] Every image has a caption

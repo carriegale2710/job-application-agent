@@ -24,3 +24,4 @@ Example shape (illustrative only):
 3. Cover the vital criteria from `criteria.md`, using its keywords, and the strongest selling points from `resume/master-resume.md`.
 4. Every claim must already appear, with evidence, elsewhere in the resume.
 5. One line per point.
+6. No objective statements ("Seeking a challenging position…"). No self-descriptions without evidence ("hard-working", "results-oriented", "team player", "motivated").

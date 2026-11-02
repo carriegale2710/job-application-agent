@@ -14,7 +14,7 @@ Use this unless the role is not technical.
 
 1. Contact details (name is the heading; phone, email, suburb; then LinkedIn, GitHub, portfolio)
 2. Profile
-3. Technical skills (grouped: languages, frameworks and libraries, databases and cloud, tools and practices)
+3. Technical skills (grouped: languages, frameworks and libraries, databases and cloud, tools and practices; within each group, the ad's keywords first, in its wording)
 4. Education
 5. Projects
 6. Relevant experience
@@ -43,11 +43,17 @@ Split experience by relevance, not by type of work:
 
 Within each section, list the most recent first.
 
+- **Several titles at one employer** (promotion or role change): one `###` per title with its own dates, the same organisation line, most recent first.
+- **Freelance or contract work:** one `### <Title> (Freelance) | Mon YYYY – Current` entry, organisation line "Self-employed – clients include A, B", one bullet per client result.
+
 ## Cutting
 
 - Review items older than about 5 years. Keep them only if they support a criterion.
 - Cut anything that supports no criterion and shows no general work skill.
-- List technical skills only if the ad asks for them or they are relevant, and say how proficient you are or where you used them.
+- List technical skills only if the ad asks for them or they are relevant, and say how proficient you are or where you used them. Leave out soft skills (show them in bullets), assumed basics (Microsoft Office, operating systems) unless the ad names them, outdated tech, skill bars or ratings, and anything the user could not discuss in a technical interview.
+- Cut tutorial follow-alongs and trivial demo apps unless the user extended them well beyond the tutorial. Prefer projects with real users, collaborators, merged open-source PRs or hackathon results.
+- List spoken languages only if relevant to the role or beyond conversational, with a level: Native, Professional or Conversational.
+- Keep a short role if it is relevant. Do not explain short tenure on the resume.
 - Include interests only if they show commitment, achievement or fit with the role.
 - Leave out political or religious affiliations unless relevant.
 
@@ -66,3 +72,4 @@ The `docx-export` script applies these. Check them if the user formats by hand.
 - Descriptive titles ("Front-end Developer Intern", not "Intern")
 - Bullets, left-aligned text, white space between sections
 - Footer with name and page number
+- Single column; no tables, text boxes, icons or images; contact details in the body, not the page header
