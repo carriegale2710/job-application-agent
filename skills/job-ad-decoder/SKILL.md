@@ -59,6 +59,7 @@ Output: `applications/<company>-<role>/criteria.md` in the format below.
 | --------- | --- | -------- | -------- | --- |
 
 ## Keywords (exact wording, most frequent first)
+- <keyword> (<times mentioned>)
 
 ## Organisation language
 

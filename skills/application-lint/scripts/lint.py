@@ -3,6 +3,7 @@
 
 Usage:
   python3 lint.py --type resume|cover|criteria <file.md> [--spelling au|us] [--words 250-350]
+                  [--keywords criteria.md]
   python3 lint.py --test
 
 Exit code 1 if any ERROR.
@@ -31,6 +32,27 @@ def spelling(lines):
             if w.lower() not in IZE_OK:
                 issues.append(("WARN", n, f"US spelling '{w}'. Use Australian English (e.g. -ise, -our, -re)."))
     return issues
+
+
+def keywords_from(criteria_text):
+    """Bullets under the '## Keywords' heading of criteria.md, minus any '(note)' or '— note'."""
+    kws, inside = [], False
+    for line in criteria_text.splitlines():
+        if line.startswith("## "):
+            inside = line[3:].lower().startswith("keywords")
+        elif inside and (m := BULLET.match(line)):
+            kw = re.split(r"\s+[(—–]", m.group(1))[0].strip(" `*")
+            if kw:
+                kws.append(kw)
+    return kws
+
+
+def keyword_coverage(text, kws):
+    missing = [k for k in kws if not re.search(rf"(?<!\w){re.escape(k)}(?!\w)", text, re.I)]
+    if not missing:
+        return []
+    return [("WARN", 0, f"Keywords: {len(kws) - len(missing)}/{len(kws)} from criteria.md found. "
+                        f"Missing: {', '.join(missing)}. Add the true ones, in the ad's wording.")]
 
 
 def blocks(lines):
@@ -172,11 +194,13 @@ def lint_criteria(lines, words_range):
 CHECKS = {"resume": lint_resume, "cover": lint_cover, "criteria": lint_criteria}
 
 
-def lint(text, doc_type, spell="au", words_range=(250, 350)):
+def lint(text, doc_type, spell="au", words_range=(250, 350), keywords=None):
     lines = text.splitlines()
     issues = CHECKS[doc_type](lines, words_range)
     if spell == "au":
         issues += spelling(lines)
+    if keywords:
+        issues += keyword_coverage(text, keywords)
     return issues
 
 
@@ -208,6 +232,15 @@ def _test():
     assert {"Passive", "always", "Teamwork"} <= k, k
     good_sc = "# Carrie – Officer\n\n## Teamwork\n\n" + "I led 4 developers to ship a feature. " * 40
     assert lint(good_sc, "criteria") == [], lint(good_sc, "criteria")
+
+    criteria = ("# Grad – Acme\n\n## Keywords (exact wording, most frequent first)\n"
+                "- React (4)\n- CI/CD — mentioned twice\n- C++\n- stakeholder management\n\n"
+                "## Gaps\n- not a keyword\n")
+    kws = keywords_from(criteria)
+    assert kws == ["React", "CI/CD", "C++", "stakeholder management"], kws
+    issues = lint(good_resume.replace("Next.js", "React and C++"), "resume", keywords=kws)
+    assert len(issues) == 1 and "2/4" in issues[0][2] and "CI/CD, stakeholder management" in issues[0][2], issues
+    assert lint("- Reactive UI", "resume", keywords=["React"]), "partial word must not match"
     print("ok")
 
 
@@ -219,11 +252,16 @@ def main():
     p.add_argument("--type", required=True, choices=CHECKS)
     p.add_argument("--spelling", default="au", choices=["au", "us"])
     p.add_argument("--words", default="250-350", help="criteria word range per criterion, e.g. 250-350")
+    p.add_argument("--keywords", metavar="CRITERIA_MD", help="check coverage of the keywords in criteria.md")
     p.add_argument("file")
     a = p.parse_args()
     lo, hi = (int(x) for x in a.words.split("-"))
+    kws = None
+    if a.keywords:
+        with open(a.keywords, encoding="utf-8") as f:
+            kws = keywords_from(f.read())
     with open(a.file, encoding="utf-8") as f:
-        results = lint(f.read(), a.type, a.spelling, (lo, hi))
+        results = lint(f.read(), a.type, a.spelling, (lo, hi), kws)
     for level, n, msg in results:
         print(f"{level} line {n}: {msg}" if n else f"{level}: {msg}")
     if not results:

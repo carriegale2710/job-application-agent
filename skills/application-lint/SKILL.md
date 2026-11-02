@@ -8,11 +8,12 @@ description: Check a resume, cover letter or selection criteria response against
 ## Step 1: run the script
 
 ```
-python3 scripts/lint.py --type resume|cover|criteria <file.md> [--spelling us] [--words 250-350]
+python3 scripts/lint.py --type resume|cover|criteria <file.md> [--spelling us] [--words 250-350] [--keywords criteria.md]
 ```
 
 `scripts/` is relative to this skill's base directory, not the user's workspace.
 
+- Always pass `--keywords applications/<company>-<role>/criteria.md` for the resume. It reports which of the ad's keywords are missing. Add only the ones that are true for the user.
 - Pass `--spelling us` only when `criteria.md` says `Spelling: US`.
 - For criteria responses, pass the employer's word limit as `--words`, e.g. `--words 200-300`.
 
@@ -22,7 +23,7 @@ What it checks:
 
 | Type | Checks |
 |---|---|
-| all | US spelling (-ize, -or, -er words) |
+| all | US spelling (-ize, -or, -er words); with `--keywords`, missing keywords from `criteria.md` (exact wording, whole words) |
 | resume | "Resume" as heading, personal details, referees, date format, weak openers, first person, long bullets |
 | cover | "To whom it may concern", apologetic phrasing, fillers, "resume attached", salary, referees, greeting and sign-off match, paragraphs over 6 lines, over 450 words, missing "Re:" line |
 | criteria | missing `##` criteria, words per criterion, no numbers, passive phrasing, "always/often/every" |
@@ -34,7 +35,7 @@ The script cannot check these. Report each as pass or fail.
 ### Resume
 
 - [ ] Every vital criterion in `criteria.md` has evidence, mostly on page 1
-- [ ] Keywords appear in the ad's wording
+- [ ] Keywords appear in the ad's wording, not synonyms ("stakeholder management", not "managing stakeholders")
 - [ ] Name is the heading; phone, professional email, hyperlinked LinkedIn; no date of birth, gender, photo or marital status
 - [ ] Most relevant sections first; most recent first within each section
 - [ ] Profile uses summary statements; experience uses achievement statements

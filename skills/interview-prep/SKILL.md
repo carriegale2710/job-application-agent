@@ -20,6 +20,12 @@ Ask once: "What do you know about the interview? Format, length, who is on the p
 6. **Company facts.** Pick 5-6 facts from `research.md` to know cold, with their sources.
 7. **Questions to ask.** Write 3-5 questions based on the research hooks. Do not ask anything the website answers, and do not ask about salary first.
 8. **Technical topics.** For tech roles, list the tools and concepts in `criteria.md` keywords to revise, ordered by how often the ad mentions them.
+9. **Hard questions.** Outline an answer for each of these, from the user's real experience:
+   - **"What is your greatest weakness?"** A real weakness that is not a vital criterion, what the user does about it, and evidence it is improving. No disguised strengths ("I work too hard").
+   - **"Tell me about a time you failed."** A real failure from `stories.md`, the user's own part in it, what they learned, and when they applied it since. End on the later success.
+   - **"Why are you leaving?" or "Why now?"** Forward-looking: what this role offers that the current one does not. No complaints about past employers.
+   - **"Explain this gap."** For any gap of 3 months or more in the resume dates: what the user did, briefly, and why they are ready now.
+   - **Salary.** Say it is negotiable and ask for the budgeted range. If pressed, give a range the user has researched. Never supply a figure yourself.
 
 ## Format
 
@@ -51,6 +57,10 @@ Ask once: "What do you know about the interview? Format, length, who is on the p
 | Claim (document) | Story behind it |
 |---|---|
 
+## Hard questions
+### <Question>
+- <outline>
+
 ## Company facts to know
 1. <fact> — <source>
 
@@ -65,3 +75,5 @@ Ask once: "What do you know about the interview? Format, length, who is on the p
 - Every story and claim must already exist in `resume/master-resume.md` or `resume/stories.md`.
 - Answers are outlines. Do not write word-for-word scripts.
 - Offer a practice round: ask one question at a time, then give feedback on structure (did it follow STAR, end with a result, and link back to the role).
+
+The hard questions are adapted from `interview-prep-generator` in [ResumeSkills](https://github.com/Paramchoudhary/ResumeSkills), MIT License, Copyright (c) 2026 Resume Skills.

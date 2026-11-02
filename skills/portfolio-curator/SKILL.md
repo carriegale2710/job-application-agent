@@ -1,6 +1,6 @@
 ---
 name: portfolio-curator
-description: Shortlist the 2-4 portfolio case studies that best prove a role's criteria, with links and one-line mentions for the resume and cover letter. Use for design, front-end and other roles where a portfolio matters.
+description: Shortlist the 2-4 portfolio case studies that best prove a role's criteria, with links and one-line mentions for the resume and cover letter, and write or strengthen case studies when the portfolio has none that fit. Use for design, front-end and other roles where a portfolio matters.
 ---
 
 # Portfolio curator
@@ -22,6 +22,18 @@ Reuse the index for every later application. Update it when the user adds work.
 1. Score each case study against the vital criteria in `criteria.md`, and against the company's products, domain and stack from `research.md`.
 2. Pick 2-4 high-impact pieces. Fewer strong pieces beat many weak ones.
 3. Show range only when the ad asks for breadth.
+4. If a vital criterion has no case study to prove it, but the master resume has a project that would, offer to write one (below).
+
+## Write or strengthen a case study
+
+Use when the user has a project with no case study, or a case study that only shows screens and not thinking.
+
+1. Gather the facts from `resume/master-resume.md` and `resume/stories.md`. Ask the user for anything the template needs that is not there: the problem, the options they considered, the results.
+2. Draft it with `references/case-study-template.md`, emphasising what the target role values.
+3. Save it as `resume/case-studies/<project-slug>.md`. The user publishes it on their site.
+4. Add it to `resume/portfolio-index.md` once it is live, with its link.
+
+To strengthen an existing case study, check it against the template's checklist and list what is missing, most important first.
 
 ## Format
 
@@ -40,6 +52,6 @@ Reuse the index for every later application. Update it when the user adds work.
 
 ## Rules
 
-- Never describe work that is not in the portfolio index or master resume.
+- Never describe work that is not in the portfolio index or master resume. In a new case study, every fact and number must come from the master resume or the user.
 - Select by criteria and research, not by what the user likes best.
 - If the site lets the user reorder or pin work, suggest which piece to put first for this application.

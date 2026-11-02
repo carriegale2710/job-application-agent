@@ -40,5 +40,5 @@ Not every bullet needs an outcome or a number. Do not force one that does not re
 For each master-resume entry:
 1. Read the raw task, outcome and metric.
 2. Draft the bullet with the formula.
-3. If the outcome is missing and the task matters for the target role, ask the user one question: "What changed because of this?" or "Roughly how many/much?"
+3. If the outcome is missing and the task matters for the target role, ask the user one question: "What changed because of this?" or "Roughly how many/much?" If they say they have no numbers, use `references/quantifying.md`.
 4. Present the bullets. Mark any you could not quantify so the user can decide.

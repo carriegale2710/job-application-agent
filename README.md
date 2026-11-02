@@ -45,12 +45,14 @@ The `job-application-agent` agent runs these steps:
 4. **Resume.** Chooses and orders sections, writes achievement statements, and writes the profile last.
 5. **Cover letter and email.** One page, covering the vital criteria and why you want this company.
 6. **Selection criteria.** Only when the employer asks. Each answer has an overview, a STAR example and a link back to the role.
-7. **Portfolio.** Shortlists 2-4 case studies that prove the criteria.
-8. **Lint.** Checks every document against the guides' checklists.
-9. **Export.** Writes formatted `.docx` files, ready to send.
-10. **Interview prep.** When you get an interview: likely questions matched to your STAR stories, honest answers for gaps, company facts and questions to ask.
+7. **Application form.** Only when the employer uses a form with written questions. Writes answers sized to each field's limit, ready to paste.
+8. **Portfolio.** Shortlists 2-4 case studies that prove the criteria, and drafts a new case study when none fits.
+9. **Lint.** Checks every document against the guides' checklists, and reports which of the ad's keywords the resume is missing.
+10. **Export.** Writes formatted `.docx` files, ready to send.
+11. **Track.** Adds the application to `applications/tracker.md`, with closing and follow-up dates.
+12. **Interview prep.** When you get an interview: likely questions matched to your STAR stories, honest answers for gaps and hard questions, company facts and questions to ask.
 
-You can also call any skill on its own, for example `/job-application-agent:cover-letter`.
+You can also call any skill on its own, for example `/job-application-agent:cover-letter`. Use `/job-application-agent:linkedin-profile` to write your LinkedIn headline, About section and Featured items from your master resume.
 
 ### Rules it always follows
 
@@ -68,6 +70,10 @@ resume/
   master-resume.md          everything about you; never sent to anyone
   stories.md                STAR stories for criteria, cover letters and interviews
   portfolio-index.md        your portfolio case studies
+  case-studies/             drafts of new case studies, before you publish them
+  linkedin.md               LinkedIn sections, ready to paste
+applications/
+  tracker.md                every application, with status and dates
 applications/<company>-<role>/
   research.md               company research and cover letter hooks
   criteria.md               decoded job ad, closing date, spelling
@@ -75,6 +81,7 @@ applications/<company>-<role>/
   cover-letter.md
   email.md
   selection-criteria.md     only when required
+  form-answers.md           only for form-based applications
   portfolio.md              case study shortlist
   interview-prep.md         only when you get an interview
   resume.docx  cover-letter.docx  selection-criteria.docx
@@ -89,14 +96,16 @@ applications/<company>-<role>/
 | `skills/company-research` | Researches the organisation, its terminology and cover letter hooks, with sources |
 | `skills/job-ad-decoder` | Finds the vital criteria, evidence level, keywords, gaps, risks and application facts |
 | `skills/section-architect` | Chooses resume sections, order, cuts, length and formatting |
-| `skills/achievement-statements` | Writes bullets as action verb + task + outcome, and rewords true facts in the employer's terms |
+| `skills/achievement-statements` | Writes bullets as action verb + task + outcome, finds honest numbers, and rewords true facts in the employer's terms |
 | `skills/career-profile` | Writes the 3-5 point profile |
 | `skills/cover-letter` | Writes job-ad, speculative, follow-up and referral letters, plus the email |
 | `skills/selection-criteria` | Writes 3-part criteria responses |
-| `skills/portfolio-curator` | Picks the case studies to feature |
-| `skills/application-lint` | Checklists plus `lint.py` for resumes, cover letters and criteria |
+| `skills/application-form` | Writes answers to online application form questions, within each field's limit |
+| `skills/portfolio-curator` | Picks the case studies to feature, and drafts new ones from a template |
+| `skills/application-lint` | Checklists plus `lint.py` for resumes, cover letters, criteria and keyword coverage |
 | `skills/docx-export` | `export_docx.js` and Word templates |
-| `skills/interview-prep` | Likely questions, matched stories, gap answers and questions to ask |
+| `skills/interview-prep` | Likely questions, matched stories, gap answers, hard questions and questions to ask |
+| `skills/linkedin-profile` | Writes your LinkedIn headline, About, experience, skills and Featured items |
 
 ### Word templates
 
@@ -107,6 +116,9 @@ applications/<company>-<role>/
 ```bash
 # Lint: --type resume | cover | criteria
 python3 skills/application-lint/scripts/lint.py --type cover applications/acme-grad/cover-letter.md
+
+# Lint a resume and check it covers the ad's keywords
+python3 skills/application-lint/scripts/lint.py --type resume --keywords applications/acme-grad/criteria.md applications/acme-grad/resume.md
 
 # Export Markdown to Word
 node skills/docx-export/scripts/export_docx.js applications/acme-grad/resume.md applications/acme-grad/resume.docx
@@ -137,3 +149,5 @@ The skills are plain `SKILL.md` folders. Copy `skills/*` into `.github/skills/`,
 Based on UNSW Careers and Employment resources: *Resume / C.V. Guide with Examples*, *Cover Letter Guide*, *Addressing Selection Criteria*, and *Building a Professional Resume, Cover Letter and Portfolio*.
 
 The gap interview, reframing strategies, gap options, terminology map and interview prep are adapted from [resume-tailoring-skill](https://github.com/varunr89/resume-tailoring-skill), MIT License, Copyright (c) 2025 Varun Ramesh.
+
+The application form answers, keyword coverage check, number-finding guide, application tracker, hard interview questions, LinkedIn profile and case study template are adapted from [ResumeSkills](https://github.com/Paramchoudhary/ResumeSkills), MIT License, Copyright (c) 2026 Resume Skills.
