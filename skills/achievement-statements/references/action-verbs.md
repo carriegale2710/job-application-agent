@@ -23,6 +23,12 @@ Delivered, Executed, Planned, Prioritised, Scheduled, Standardised, Streamlined,
 ## Improvement
 Accelerated, Cut, Enhanced, Grew, Improved, Increased, Reduced, Saved, Simplified, Strengthened
 
+## Problem solving
+Eliminated, Fixed, Mitigated, Prevented, Resolved, Troubleshot
+
+## Achievement
+Achieved, Awarded, Earned, Exceeded, Secured, Won
+
 ## Teaching / helping
 Advised, Coached, Guided, Onboarded, Supported, Trained, Tutored
 

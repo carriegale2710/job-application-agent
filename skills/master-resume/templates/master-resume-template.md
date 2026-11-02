@@ -24,6 +24,7 @@
 - Grades / awards / scholarships:
 - Relevant coursework:
 - Notable projects or thesis (plain-language title):
+- Length and mode (bootcamps): <e.g. 12 weeks full-time>
 
 ## Experience
 ### <Descriptive title> — <Organisation>, <Location>
@@ -31,7 +32,7 @@
 - Relevant to: <role types>
 - Tools:
 - Tasks:
-  - Task: | Outcome/purpose: | Metric: <number or "no metric">
+  - Task: | Outcome/purpose: | Metric: <number or "no metric"> | Source: <PR, CI run, analytics, email, transcript, or "recollection">
 
 ## Projects
 ### <Project name> — <Context: personal, bootcamp, client, hackathon>
@@ -40,7 +41,10 @@
 - Stack:
 - Repo / live link:
 - Tasks:
-  - Task: | Outcome/purpose: | Metric:
+  - Task: | Outcome/purpose: | Metric: | Source:
+
+## Date gaps
+- <Mon YYYY – Mon YYYY>: <what you did>
 
 ## Programs & activities
 ### <Program, hackathon, course or community role> — <Organiser>

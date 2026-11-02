@@ -8,7 +8,7 @@ description: Write or refresh the user's LinkedIn headline, About section, exper
 Input: `resume/master-resume.md`, `resume/stories.md`, `resume/portfolio-index.md` if it exists, and the kinds of roles the user is targeting.
 Output: `resume/linkedin.md`, with one section per profile section, ready to paste.
 
-LinkedIn is not tailored per application. Write it for the kind of role the user wants, using the words those ads use most.
+LinkedIn is not tailored per application. Write it for the kind of role the user wants, using the words those ads use most, and in the profiles of people already in that role.
 
 ## Sections
 
@@ -19,7 +19,7 @@ LinkedIn is not tailored per application. Write it for the kind of role the user
 
 **About** (2,600 characters max; aim for 1,000-2,000).
 
-1. A first line that works on its own. It is all that shows before "see more".
+1. A first line that works on its own. Only about the first 300 characters show before "see more", so front-load them.
 2. Who you are and what you do.
 3. 2-3 achievements, each with where it happened.
 4. What you want next.
@@ -30,9 +30,13 @@ Write in first person. LinkedIn is the one place where that is normal.
 
 **Experience.** For each role: title, organisation, dates, location, a 1-2 sentence description, then 3-5 achievement statements (`achievement-statements`). Use the master resume's facts, not any one tailored resume.
 
+**Education, Licences & certifications, Volunteer experience.** Fill these from the master resume. For graduates, Education carries as much weight as Experience: add grades if strong, relevant coursework and projects.
+
 **Skills.** Pick the 3 to feature: the skills most common in the target ads that the user can prove. Then list the rest, tools first, ordered by relevance.
 
 **Featured.** 2-4 items: the strongest portfolio case studies, repos or articles. Use the portfolio index.
+
+**Recommendations.** Suggest 2-3 people to ask: a supervisor, a lecturer, a project teammate. For each, give them specific talking points (one project and one skill) so they can write something concrete.
 
 **Custom URL.** Suggest `linkedin.com/in/<firstname-lastname>` if the user has a default URL with numbers. The resume links to it.
 
@@ -61,7 +65,8 @@ Others: <list>
 
 ## Settings to check
 - Custom URL
-- "Open to work": visible to recruiters only, if the user is currently employed
+- "Open to work": visible to recruiters only, if the user is currently employed. Set job titles, locations, start date and job types (graduate, internship, full-time)
+- Photo: a professional headshot, face filling most of the frame, good lighting
 ```
 
 ## Rules

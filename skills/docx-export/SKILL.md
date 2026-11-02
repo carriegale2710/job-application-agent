@@ -21,7 +21,9 @@ applications/<company>-<role>/cover-letter.docx
 applications/<company>-<role>/selection-criteria.docx
 ```
 
-Then render the `.docx` to PDF or images and look at every page: check it fits the page limit (resume 2 pages, cover letter 1 page) and nothing overflows.
+Then render the `.docx` to PDF or images and look at every page: check it fits the page limit (resume 2 pages, cover letter 1 page) and nothing overflows. Flag a last page holding only a few lines: trim or rebalance.
+
+Name the files you send `<Firstname>-<Surname>-Resume` and `<Firstname>-<Surname>-Cover-Letter`, never "final_v2" or "resume (1)". Send the format the portal asks for. By email, send PDF exported from Word, never a scan.
 
 ## Layout
 

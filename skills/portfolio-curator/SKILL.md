@@ -54,4 +54,5 @@ To strengthen an existing case study, check it against the template's checklist 
 
 - Never describe work that is not in the portfolio index or master resume. In a new case study, every fact and number must come from the master resume or the user.
 - Select by criteria and research, not by what the user likes best.
+- Before linking a GitHub repo, check its README says what it does, the stack, how to run it, and has a screenshot or demo link. For team work, it states the user's part. Suggest pinning up to 6 repos most relevant to the target roles.
 - If the site lets the user reorder or pin work, suggest which piece to put first for this application.

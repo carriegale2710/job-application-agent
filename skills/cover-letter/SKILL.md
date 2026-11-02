@@ -24,6 +24,7 @@ Use the `Letter type` in `criteria.md`.
 ## 2. Pick the opening
 
 - **job-ad:** use a *motivational opening* when `research.md` has a strong hook that connects to the user. Otherwise use a *key selling points opening*: qualification, strongest experience, and why you can succeed in the role.
+- Never open with "I am writing to apply for…" or "I am the perfect candidate". Name the role inside a sentence that already says something about you or them.
 - **follow-up:** thank them for the conversation and name what impressed you.
 - **referral:** name the referrer and their relationship to you in the first sentence.
 - **speculative:** give a specific reason you are drawn to them, and acknowledge there may be no advertised role.
@@ -31,7 +32,7 @@ Use the `Letter type` in `criteria.md`.
 ## 3. Structure
 
 1. **Opening - why them.** Who you are in one line (qualification plus strongest experience). Why this role and company, using researched specifics. What value you bring to their needs, not what you want.
-2. **Middle, 1-3 paragraphs - why you.** Cover the vital 3-5 criteria from `criteria.md`, not every criterion. One theme per paragraph: either one experience that shows several skills, or one skill shown across several experiences. Back each claim with an achievement.
+2. **Middle, 1-3 paragraphs - why you.** Cover the vital 3-5 criteria from `criteria.md`, not every criterion. One theme per paragraph: either one experience that shows several skills, or one skill shown across several experiences. Back each claim with an achievement. For tech roles, name the ad's technologies you have used, and link one relevant repo or project.
 3. **Summary.** Why you are the best fit. Try the 3 best things about you and how they will get results in this role.
 4. **Closing.** Thank them, and say you look forward to discussing the role at an interview.
 

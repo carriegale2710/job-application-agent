@@ -18,7 +18,7 @@ linkedin.com/in/namesurname | github.com/namesurname | namesurname.dev
 ## Education
 ### [Bachelor of / Diploma of / Bootcamp name (Specialisation)] | Mon YYYY – expected Mon YYYY
 [Institution]
-- [WAM/GPA or grade, if strong | scholarships or awards]
+- [WAM/GPA or grade, if strong | scholarships or awards | bootcamps: length and mode, e.g. 12 weeks full-time]
 - [Relevant coursework: e.g. Data Structures & Algorithms, Databases, Software Engineering]
 - [Capstone or team project: what you built + team size + grade or result]
 

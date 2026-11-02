@@ -34,11 +34,11 @@ Folder name: lowercase with hyphens, for example `applications/atlassian-graduat
 
 ## Tracker
 
-`applications/tracker.md` lists every application, newest first:
+`applications/tracker.md` (alternatively, use `tracker.csv` or `tracker.xslx`) lists every application, newest first:
 
 ```markdown
 | Company | Role | Folder | Closing | Applied | Method | Status | Follow up | Notes |
-|---|---|---|---|---|---|---|---|---|
+| ------- | ---- | ------ | ------- | ------- | ------ | ------ | --------- | ----- |
 ```
 
 - **Method:** portal, email, referral (name), or speculative

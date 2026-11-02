@@ -106,6 +106,11 @@ applications/<company>-<role>/
 | `skills/docx-export` | `export_docx.js` and Word templates |
 | `skills/interview-prep` | Likely questions, matched stories, gap answers, hard questions and questions to ask |
 | `skills/linkedin-profile` | Writes your LinkedIn headline, About, experience, skills and Featured items |
+| `skills/career-changer-translator` | Translates skills and experience from one industry into the target field's language, and builds the "why I'm changing" story |
+| `skills/cold-email-writer` | Writes personalised cold outreach emails to hiring managers and founders |
+| `skills/creative-portfolio-resume` | Balances visual design with ATS compatibility for creative roles |
+| `skills/reference-list-builder` | Formats your professional references and prepares reference materials |
+| `skills/salary-negotiation-prep` | Researches market rates, builds a negotiation strategy and writes counter-offer scripts |
 
 ### Word templates
 
