@@ -41,13 +41,14 @@ The `job-application-agent` agent runs these steps:
 
 1. **Master resume and stories.** Builds or reads your source-of-truth resume and STAR story bank.
 2. **Research.** Looks up the company's products, recent projects, values and news, and finds hooks for your cover letter.
-3. **Decode the ad.** Picks the 3-5 criteria that decide shortlisting and tags each as *can do*, *will do* or *fit*. Notes the closing date and warns you if it is 3 days away or less.
+3. **Decode the ad.** Picks the 3-5 criteria that decide shortlisting and tags each as *can do*, *will do* or *fit*. Notes the closing date and warns you if it is 3 days away or less. For any criterion with weak or missing evidence, it interviews you to find experience you haven't written down, then lets you choose how to handle the gaps that remain.
 4. **Resume.** Chooses and orders sections, writes achievement statements, and writes the profile last.
 5. **Cover letter and email.** One page, covering the vital criteria and why you want this company.
 6. **Selection criteria.** Only when the employer asks. Each answer has an overview, a STAR example and a link back to the role.
 7. **Portfolio.** Shortlists 2-4 case studies that prove the criteria.
 8. **Lint.** Checks every document against the guides' checklists.
 9. **Export.** Writes formatted `.docx` files, ready to send.
+10. **Interview prep.** When you get an interview: likely questions matched to your STAR stories, honest answers for gaps, company facts and questions to ask.
 
 You can also call any skill on its own, for example `/job-application-agent:cover-letter`.
 
@@ -75,6 +76,7 @@ applications/<company>-<role>/
   email.md
   selection-criteria.md     only when required
   portfolio.md              case study shortlist
+  interview-prep.md         only when you get an interview
   resume.docx  cover-letter.docx  selection-criteria.docx
 ```
 
@@ -83,17 +85,18 @@ applications/<company>-<role>/
 | Component | What it does |
 |---|---|
 | `agents/job-application-agent.md` | Runs the workflow and enforces the rules above |
-| `skills/master-resume` | Builds your master resume, selling points, motivations, values and story bank |
-| `skills/company-research` | Researches the organisation and writes cover letter hooks, with sources |
-| `skills/job-ad-decoder` | Finds the vital criteria, evidence level, keywords and application facts |
+| `skills/master-resume` | Builds your master resume, selling points, motivations, values and story bank, and runs gap interviews |
+| `skills/company-research` | Researches the organisation, its terminology and cover letter hooks, with sources |
+| `skills/job-ad-decoder` | Finds the vital criteria, evidence level, keywords, gaps, risks and application facts |
 | `skills/section-architect` | Chooses resume sections, order, cuts, length and formatting |
-| `skills/achievement-statements` | Writes bullets as action verb + task + outcome |
+| `skills/achievement-statements` | Writes bullets as action verb + task + outcome, and rewords true facts in the employer's terms |
 | `skills/career-profile` | Writes the 3-5 point profile |
 | `skills/cover-letter` | Writes job-ad, speculative, follow-up and referral letters, plus the email |
 | `skills/selection-criteria` | Writes 3-part criteria responses |
 | `skills/portfolio-curator` | Picks the case studies to feature |
 | `skills/application-lint` | Checklists plus `lint.py` for resumes, cover letters and criteria |
 | `skills/docx-export` | `export_docx.js` and Word templates |
+| `skills/interview-prep` | Likely questions, matched stories, gap answers and questions to ask |
 
 ### Word templates
 
@@ -132,3 +135,5 @@ The skills are plain `SKILL.md` folders. Copy `skills/*` into `.github/skills/`,
 ## Credits
 
 Based on UNSW Careers and Employment resources: *Resume / C.V. Guide with Examples*, *Cover Letter Guide*, *Addressing Selection Criteria*, and *Building a Professional Resume, Cover Letter and Portfolio*.
+
+The gap interview, reframing strategies, gap options, terminology map and interview prep are adapted from [resume-tailoring-skill](https://github.com/varunr89/resume-tailoring-skill), MIT License, Copyright (c) 2025 Varun Ramesh.

@@ -25,6 +25,7 @@ Stop after about 6 searches. Quality beats volume.
 - **Tech roles:** tech stack and engineering practices (blog, job ads, GitHub, talks)
 - **Graduate program:** structure, rotations, intake dates, if relevant
 - **Contact person:** name, title and role from the ad or research
+- **Terminology map:** the organisation's own words for common things, for example "squad" for team or "customers" for users, taken from their site, blog and job ads. Bullets and letters use their words.
 
 ## Hooks
 
@@ -47,6 +48,10 @@ Illustrative example, for a fictional company:
 ## Tech stack and practices
 ## Graduate program
 ## Contact person
+
+## Terminology map
+| Common term | Their term | Source |
+|---|---|---|
 
 ## Hooks for the cover letter
 1. <fact> — why it matters to the user: <link to their motivation or experience>

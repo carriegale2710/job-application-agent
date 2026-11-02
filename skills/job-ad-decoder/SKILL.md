@@ -18,6 +18,13 @@ Output: `applications/<company>-<role>/criteria.md` in the format below.
 6. **Evidence level.** Read the wording against `references/criteria-glossary.md`. "Proven record" needs documented outcomes; "awareness of" needs only familiarity.
 7. **Keywords.** Collect tools, methods, domain terms and soft skills in the ad's exact wording, most frequent first.
 8. **Map** each criterion to evidence in `resume/master-resume.md` and `resume/stories.md`. Mark it `strong`, `weak` or `gap`.
+9. **Gap interview.** For each vital criterion marked `weak` or `gap`, run the gap interview in `master-resume` (`references/gap-interview.md`). Update the evidence level afterwards.
+10. **Gap options.** For each criterion still marked `gap`, give the user these options and record their choice:
+    - **Cover letter:** say how they are closing the gap (a course, a project, how fast they learned something similar)
+    - **Leave it out:** drop the resume slot, and give the space to a stronger criterion
+    - **Weak match:** use the best `weak` evidence, worded honestly (see `achievement-statements`, `references/reframing.md`)
+    - **Accept:** apply anyway, and prepare an honest interview answer
+11. **Risks.** List anything a reader might hold against the user for this role: overqualified, a career change, a date gap, missing work rights, location. For each, note how the application answers it. Use the terminology map in `research.md`, if it exists, for the organisation language.
 
 ## Output format
 
@@ -25,6 +32,7 @@ Output: `applications/<company>-<role>/criteria.md` in the format below.
 # <Role> — <Company>
 
 ## Facts
+
 - Contact: <title and name, position> | none found
 - Reference:
 - Closing date: <D Month YYYY>
@@ -34,27 +42,38 @@ Output: `applications/<company>-<role>/criteria.md` in the format below.
 - Letter type: job-ad | speculative | follow-up | referral (<referrer>)
 
 ## Vital criteria
-| # | Criterion | Tag | Evidence level | Best evidence | Fit |
-|---|---|---|---|---|---|
+
+| #   | Criterion | Tag | Evidence level | Best evidence | Fit |
+| --- | --------- | --- | -------------- | ------------- | --- |
 
 ## All criteria
+
 ### Must have
+
 | Criterion | Tag | Keywords | Evidence | Fit |
-|---|---|---|---|---|
+| --------- | --- | -------- | -------- | --- |
+
 ### Nice to have
+
 | Criterion | Tag | Keywords | Evidence | Fit |
-|---|---|---|---|---|
+| --------- | --- | -------- | -------- | --- |
 
 ## Keywords (exact wording, most frequent first)
 
 ## Organisation language
 
-## Gaps to raise with the user
+## Gaps
+| Criterion | Interviewed | Option chosen |
+|---|---|---|
+
+## Risks
+| Risk | How the application answers it |
+|---|---|
 ```
 
 ## Rules
 
 - Use the ad's wording for keywords. Do not substitute synonyms.
-- For each `gap`, ask the user whether they have unrecorded evidence before marking it final.
+- Do not mark a `gap` final until the gap interview has run. The user chooses the gap option, not you.
 - If the closing date is 3 days away or less, say so first.
 - Do not advise whether to apply. Report fit only.

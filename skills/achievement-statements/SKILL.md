@@ -19,7 +19,7 @@ Not every bullet needs an outcome or a number. Do not force one that does not re
 
 1. Start every bullet with a strong past-tense action verb. Use present tense only for a current role, and keep it consistent within that role. Pick verbs from `references/action-verbs.md` that signal the skill the job ad wants.
 2. One sentence per bullet. Aim for one line.
-3. Put keywords from `criteria.md` into bullets where they are true.
+3. Put keywords from `criteria.md` into bullets where they are true. To reword a true fact in the employer's terms, use the strategies in `references/reframing.md`.
 4. Order bullets within a role by relevance to the target job, not by time.
 5. 3-6 bullets per role. Fewer for unrelated roles.
 6. Prefer the activities and achievements that set the user apart from other graduates with similar backgrounds. Avoid generalities.
